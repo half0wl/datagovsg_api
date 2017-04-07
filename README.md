@@ -1,25 +1,20 @@
 # datagovsg_api
 
-[![Build Status](https://travis-ci.org/half0wl/datagovsg_api.svg?branch=master)](https://travis-ci.org/half0wl/datagovsg_api)
+[![Build Status](https://travis-ci.org/half0wl/datagovsg_api.svg?branch=master)](https://travis-ci.org/half0wl/datagovsg_api) [![Documentation Status](https://readthedocs.org/projects/datagovsg-api/badge/?version=latest)](http://datagovsg-api.readthedocs.io/en/latest/?badge=latest)
 
 Unofficial Python API wrapper for public APIs at developers.data.gov.sg.
 
 **Disclaimer**: The author is not associated with data.gov.sg, and this project does not represent data.gov.sg or it's affiliates in any way.
 
-Docs: https://datagovsg_api.readthedocs.io/en/latest/
+## Documentation
+  
+https://datagovsg_api.readthedocs.io/en/latest/
 
-This is a work in progress, the following methods are not yet implemented:
+## Installation
 
-* air_temperature
-* pm25
-* psi
-* rainfall
-* relative_humidity
-* uv_index
-* wind_direction
-* wind_speed
+`$ pip install datagovsg_api`
 
-Example:
+## Example
 
 ```python
 import datagovsg_api
@@ -39,3 +34,16 @@ datagovsg.weather_forecast(duration='2-hour')
 datagovsg.weather_forecast(duration='24-hour')
 datagovsg.weather_forecast(duration='4-day')
 ```
+
+## Todo
+
+This is a work in progress, so the following methods are not yet implemented:
+
+* `air_temperature`
+* `pm25`
+* `psi`
+* `rainfall`
+* `relative_humidity`
+* `uv_index`
+* `wind_direction`
+* `wind_speed`
