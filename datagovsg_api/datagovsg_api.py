@@ -60,7 +60,7 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            `Response`` object: Call ``.json()`` to get the json (dict)
+            A ``Response`` object. Call ``.json()`` to get the json (dict)
             representation of the data. E.g. ``taxi_availability().json()``.
             The json is a valid GeoJSON.
         """
@@ -83,7 +83,7 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            `Response`` object: Call ``.json()`` to get the json (dict)
+            A ``Response`` object. Call ``.json()`` to get the json (dict)
             representation of the data. E.g. ``traffic_images().json()``.
         """
         endpoint = 'transport/traffic-images'
@@ -116,7 +116,7 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            `Response`` object: Call ``.json()`` to get the json (dict)
+            A ``Response`` object. Call ``.json()`` to get the json (dict)
             representation of the data.
             E.g. ``weather_forecast(duration='4-day').json()``.
 
