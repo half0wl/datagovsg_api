@@ -35,13 +35,13 @@ class APIClient(object):
             params (dict, optional): Request parameters.
 
         Returns:
-            dict (json): The JSON response of the request.
+            A ``Response`` object.
         """
         request_headers = {'api-key': self.API_KEY}
         endpoint_url = self._build_request_url(endpoint)
         return requests.get(endpoint_url,
                             headers=request_headers,
-                            params=params).json()
+                            params=params)
 
     # --------------------------------
     # Category: Transport
@@ -60,8 +60,9 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            dict (json): The JSON response of the request. The response is a
-            valid GeoJSON.
+            `Response`` object: Call ``.json()`` to get the json (dict)
+            representation of the data. E.g. ``taxi_availability().json()``.
+            The json is a valid GeoJSON.
         """
         endpoint = 'transport/taxi-availability'
         params = {}
@@ -82,7 +83,8 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            dict (json): JSON response of the request.
+            `Response`` object: Call ``.json()`` to get the json (dict)
+            representation of the data. E.g. ``traffic_images().json()``.
         """
         endpoint = 'transport/traffic-images'
         params = {}
@@ -114,7 +116,9 @@ class APIClient(object):
                 , for example: ``2016-12-12T09:45:00``.
 
         Returns:
-            dict (json): JSON response of the request.
+            `Response`` object: Call ``.json()`` to get the json (dict)
+            representation of the data.
+            E.g. ``weather_forecast(duration='4-day').json()``.
 
         Raises:
             Exception: Duration must be a string '2-hour', '24-hour', '4-day'.
