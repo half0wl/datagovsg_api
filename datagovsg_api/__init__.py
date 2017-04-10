@@ -22,4 +22,4 @@ class AllAPI(TransportAPI, EnvironmentAPI):
         API_KEY (str): A valid API key obtained from developers.data.gov.sg.
     """
     def __init__(self, API_KEY):
-        super().__init__(API_KEY)
+        super(AllAPI, self).__init__(API_KEY)

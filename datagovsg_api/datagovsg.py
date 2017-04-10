@@ -1,7 +1,7 @@
 import requests
 
 
-class DataGovSG():
+class DataGovSG(object):
 
     """
     Base class for API wrappers to inherit from.

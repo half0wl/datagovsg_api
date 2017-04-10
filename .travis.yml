@@ -7,4 +7,4 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
-script: python tests.py
+script: python datagovsg_api/tests.py

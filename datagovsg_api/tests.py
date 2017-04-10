@@ -7,7 +7,7 @@ from datagovsg import DataGovSG
 class TestDataGovSG(unittest.TestCase):
 
     def setUp(self):
-        self.client = DataGovSG(API_KEY=os.environ['DATAGOVSG_API_KEY'])
+        self.client = DataGovSG(API_KEY=os.environ['DataGovSG_APIKEY'])
 
     def test_build_url(self):
         expected = 'https://api.data.gov.sg/v1/environment/psi'

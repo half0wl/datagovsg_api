@@ -13,7 +13,7 @@ class EnvironmentAPI(DataGovSG):
     """
 
     def __init__(self, API_KEY):
-        super().__init__(API_KEY)
+        super(EnvironmentAPI, self).__init__(API_KEY)
 
     def weather_forecast(self, duration, date=None, date_time=None):
         """

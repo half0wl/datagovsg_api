@@ -13,7 +13,7 @@ class TransportAPI(DataGovSG):
     """
 
     def __init__(self, API_KEY):
-        super().__init__(API_KEY)
+        super(TransportAPI, self).__init__(API_KEY)
 
     def taxi_availability(self, date_time=None):
         """

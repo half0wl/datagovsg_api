@@ -1,5 +1,6 @@
 *.DS_Store
 .venv
+.venv-py2
 *.pyc
 __pycache__/
 docs/_build/
